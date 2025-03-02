@@ -20,6 +20,7 @@ function Cart() {
   return (
     <div className="container">
       <h1>Savatcha 🛒</h1>
+      <div className="product-list">
       {cart.length > 0 ? cart.map((product, index) => (
         <div key={index} className="product-card">
           <img src={product.image} alt={product.name} />
@@ -28,6 +29,8 @@ function Cart() {
           <button onClick={() => removeFromCart(index)}>O‘chirish ❌</button>
         </div>
       )) : <p>Savatcha bo‘sh.</p>}
+
+      </div>
     </div>
   );
 }

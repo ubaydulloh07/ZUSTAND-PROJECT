@@ -20,6 +20,8 @@ function LikedProducts() {
   return (
     <div className="container">
       <h1>Yoqqan mahsulotlar ❤️</h1>
+
+      <div className="product-list">
       {liked.length > 0 ? liked.map((product, index) => (
         <div key={index} className="product-card">
           <img src={product.image} alt={product.name} />
@@ -28,6 +30,8 @@ function LikedProducts() {
           <button onClick={() => removeFromLiked(index)}>O‘chirish ❌</button>
         </div>
       )) : <p>Yoqqan mahsulotlar yo‘q.</p>}
+
+      </div>
     </div>
   );
 }
