@@ -1,25 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Cart from "./pages/Cart";
-import LikedProducts from "./pages/LikedProducts";
-import AddProduct from "./pages/AddProduct";
-import EditProduct from "./components/EditProduct";
-import Header from "./components/Header";
-import "./App.css";
+
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/header/header";
+
+import Home from "./pages/Home/home";
+import Liked from "./pages/Liked/liked";
+import Cart from "./pages/Cart/cart";
+import Add from "./pages/add-page/add";
 
 function App() {
   return (
-    <Router>
+
+    <BrowserRouter>
+
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/liked" element={<LikedProducts />} />
-        <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/edit-product/:id" element={<EditProduct />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/liked" element={ <Liked/>} />
+        <Route path="/cart" element={ <Cart/>} />
+        <Route path="/add" element={ <Add/>} />
       </Routes>
-    </Router>
+     
+    </BrowserRouter>
+    
+   
+    
   );
 }
 
 export default App;
+
+
