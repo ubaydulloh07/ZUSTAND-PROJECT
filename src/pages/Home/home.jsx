@@ -1,4 +1,5 @@
 import useStore from "../../store/useStore";
+
 import "./home.css";
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
                   </button>
 
                   <button  className="cart" onClick={() => addToCart(product.id)} disabled={isInCart}>
-                    {/* {isInCart ? "Savatda bor" : " Savatga qo'shish"} */}
+                  
                     🛒
                   </button>
                  

@@ -1,6 +1,7 @@
 import useStore from "../../store/useStore";
 import "./liked.css";
 
+
 const Liked = () => {
   const { likedProducts, addToLiked } = useStore();
 

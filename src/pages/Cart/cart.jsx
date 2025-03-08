@@ -55,7 +55,7 @@ const Cart = () => {
 
                  
 
-                  {/* Oylik to‘lov */}
+                  
                   <p>
                     <small>
                       {Math.round((product.price * quantities[product.id]) / 12).toLocaleString()} so‘m x 12 oy
@@ -79,7 +79,7 @@ const Cart = () => {
           <p>Savat bo‘sh...</p>
         )}
       </div>
-      {/* Savatning umumiy hisob qismini qo‘shish */}
+  
       {cart.length > 0 && (
         <div className="cart-summary">
           <h3>Savatda {cart.length} ta mahsulot</h3>

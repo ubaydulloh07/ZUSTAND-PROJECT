@@ -1,0 +1,31 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 15px; */
+  flex-direction: column;
+  padding: 100px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
