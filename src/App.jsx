@@ -9,7 +9,7 @@ import Liked from "./pages/Liked/liked";
 import Cart from "./pages/Cart/cart";
 import Add from "./pages/add-page/add";
 import Profile from "./pages/profile/profile";
-import Login from "./pages/Login/login";
+import Login from "./pages/login/login";
 import useAuth from "./store/useAuth";
 import Products from "./pages/product-page/product";
 
