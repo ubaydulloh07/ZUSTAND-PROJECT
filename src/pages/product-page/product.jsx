@@ -13,7 +13,7 @@ const Products = () => {
   const { products, user, addToCart, addToLiked, removeProduct } = useStore();
 
   return (
-    <div>
+    <div className="product-container">
       <h2>Products</h2>
       <div className="product-list">
         {products.map((product) => (
