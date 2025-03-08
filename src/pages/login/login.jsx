@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useStore from "../../store/useStore";
 import useAuth from "../../store/useAuth";
+import "./login.css";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -22,6 +23,8 @@ function Login() {
 
   return (
     <div className="login-container">
+      <div className="login">
+
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -38,8 +41,9 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit">Kirish</button>
       </form>
+      </div>
     </div>
   );
 }
