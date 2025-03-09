@@ -64,44 +64,10 @@ export default useAuth;
 
 
 
-/////    ddkkdkdkdkdkdkkdkd
+// /////    ddkkdkdkdkdkdkkdkd
 
 
 
 
-// import { create } from "zustand";
 
-// const useAuth = create((set) => ({
-//   user: JSON.parse(localStorage.getItem("user")) || null,
 
-//   login: async (username, password) => {
-//     try {
-//       const res = await fetch("https://dummyjson.com/auth/login", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({ username, password }),
-//       });
-
-//       const data = await res.json();
-//       if (data.token) {
-//         localStorage.setItem("user", JSON.stringify(data));
-//         set({ user: data });
-//         return { success: true };
-//       } else {
-//         console.log(data);
-//         return { success: false, message: "Login yoki parol noto‘g‘ri!" };
-
-//       }
-//     } catch (error) {
-//       console.error("Login xatosi:", error);
-//       return { success: false, message: "Server xatosi!" };
-//     }
-//   },
-
-//   logout: () => {
-//     localStorage.removeItem("user");
-//     set({ user: null });
-//   },
-// }));
-
-// export default useAuth;

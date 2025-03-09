@@ -1,37 +1,9 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  // user: null,
   products: [],
   cart: [],
   likedProducts: [],
-
-  // login: async (username, password) => {
-  //   try {
-  //     const response = await fetch("https://dummyjson.com/auth/login", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({ username, password }),
-  //     });
-  //     const data = await response.json();
-
-  //     if (!response.ok) {
-  //       throw new Error(data.message || "Login yoki parol noto‘g‘ri!");
-  //     }
-
-  //     if (data.token) {
-  //       set({ user: data });
-  //       return { success: true, data };
-  //     } else {
-  //       return { success: false, message: "Login yoki parol noto‘g‘ri!" };
-  //     }
-  //   } catch (error) {
-  //     console.error("Login xatosi:", error.message);
-  //     return { success: false, message: error.message };
-  //   }
-  // },
-
-  // logout: () => set({ user: null }),
 
   addToLiked: (id) =>
     set((state) => {
